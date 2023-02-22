@@ -256,19 +256,66 @@ button:hover {
   
   main {
     flex-direction: column;
-    width: 375px;
+    width: auto;
     margin: 0;
     background-color: white;
+    box-shadow: none;
   }
 
   .left-column {
-    width: 375px;
+    height: 356px;
+    width: auto;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
   }
 
   .right-column {
     border-radius: 0;
-    width: 375px;
+    width: auto;
+  }
+
+  .right-column p {
+    /* font-size: 16px; */
+  }
+
+  .upper-side {
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .middle-side {
+    height: 140px;
+    width: 140px;
+    border-radius: 70px;
+    margin-left: 118px;
+  }
+
+  .middle-side :nth-child(1) {
+    font-size: 56px;
+    padding-top: 25px;
+    padding-left: 38px;
+  }
+
+  .middle-side :nth-child(2) {
+    font-size: 16px;
+    padding-left: 47px;
+  }
+
+  .bottom-side :nth-child(1) {
+    font-size: 24px;
+    margin-top: 24px;
+    margin-left: 154px;
+  }
+
+  .bottom-side :nth-child(2) {
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+  .title {
+    font-size: 18px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 32px;
   }
 }
