@@ -18,6 +18,7 @@ main {
   background-color: white;
   border-top-right-radius: 32px;
   border-bottom-right-radius: 32px;
+  box-shadow: 0px 30px 60px rgba(61, 108, 236, 0.15);
 }
 
 .left-column { 
@@ -98,11 +99,17 @@ main {
 .reaction {
   display: flex;
   flex-direction: row;
-  margin-bottom: 49px;
+  margin-bottom: 12px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FF5555;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  border-radius: 12px;
 }
 
 .reaction img {
-  margin-left: 56px;
+  margin-left: 20.17px;
 }
 
 .reaction :nth-child(2) {
@@ -111,6 +118,7 @@ main {
   color: #ff5555;
   font-weight: 500;
   font-size: 18px;
+
 }
 
 .reaction :nth-child(3) {
@@ -129,11 +137,17 @@ span {
 .memory {
   display: flex;
   flex-direction: row;
-  margin-bottom: 49px;
+  margin-bottom: 12px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #FFB21E;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  border-radius: 12px;
 }
 
 .memory img {
-  margin-left: 56px;
+  margin-left: 20.17px;
 }
 
 .memory :nth-child(2) {
@@ -156,11 +170,17 @@ span {
 .verbal {
   display: flex;
   flex-direction: row;
-  margin-bottom: 49px;
+  margin-bottom: 12px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #00BB8F;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  border-radius: 12px;
 }
 
 .verbal img {
-  margin-left: 56px;
+  margin-left: 20.17px;
 }
 
 .verbal :nth-child(2) {
@@ -182,11 +202,17 @@ span {
 .visual {
   display: flex;
   flex-direction: row;
-  margin-bottom: 57px;
+  margin-bottom: 41px;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), #1125D6;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 17px;
+  padding-bottom: 16px;
+  border-radius: 12px;
 }
 
 .visual img {
-  margin-left: 56px;
+  margin-left: 20.17px;
 }
 
 .visual :nth-child(2) {
@@ -220,4 +246,29 @@ button {
 
 button:hover {
   background: linear-gradient(180deg, #7755FF 0%, #6943FF 0.01%, #2F2CE9 100%);;
+}
+
+@media screen and (max-width: 400px) {
+  
+  body {
+    background-color: white;
+  }
+  
+  main {
+    flex-direction: column;
+    width: 375px;
+    margin: 0;
+    background-color: white;
+  }
+
+  .left-column {
+    width: 375px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  .right-column {
+    border-radius: 0;
+    width: 375px;
+  }
 }
